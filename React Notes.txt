@@ -1,0 +1,11 @@
+- You create a new app by typing in 'npx create-react-app app-name'
+- npx borrows the modules for a while, whereas npm downloads them forever
+- You make changes in App.js which shows the changes in the entire application
+- App.js uses JSX, which is a form of JS wherein we write code in HTML but with JS' standards
+- You can return only one element in a JSX return function
+   eg. return(<div> .. </div>);
+- Multiple elements can be returned using a JSX fragment
+   eg. <>
+	<h1> .. </h1>
+	<div> .. </div>
+       </>
