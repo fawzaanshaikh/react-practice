@@ -12,5 +12,6 @@
 
 - Webpack is used to change the CSS files through JSX/ JS
 - Babel compiles JSX code into JS (React.createElement() calls)
+- Props is short for Properties
 - 
 
