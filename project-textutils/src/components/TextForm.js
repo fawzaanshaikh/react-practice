@@ -13,6 +13,11 @@ export default function TextForm(props) {
         let newText = text.toLowerCase();
         setText(newText);
     }
+    
+    const handleClearClick = () => {
+        let newText = "";
+        setText(newText);
+    }
 
     const handleOnChange = (event) => { // event is passed as a parameter by default for any event that takes place
         console.log("On change");
@@ -20,7 +25,7 @@ export default function TextForm(props) {
     }
 
     // This is used to track the change in our component's state in terms of the change in text, this uses array destructuring
-    const [text, setText] = useState("Enter text here");
+    const [text, setText] = useState("");
     // text = "new text"; // Wrong way to change the state
     // setText("new text"); // Correct way to change the state
 
@@ -33,6 +38,7 @@ export default function TextForm(props) {
             </div>
             <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to Lowercase</button>
+            <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear Text</button>
         </div>
 
         <div className="container my-5">
