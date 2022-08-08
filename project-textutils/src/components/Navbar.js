@@ -6,7 +6,7 @@ import PropTypes from 'prop-types' // type impt to get prop types import
 export default function Navbar(props) {
   return (
     <>
-        <nav className="navbar navbar-expand-lg bg-light">
+        <nav className="navbar navbar-expand-lg bg-dark navbar-dark"> {/* Earlier it was bg-light and navbar-light */}
         <div className="container-fluid">
             <a className="navbar-brand" href="/">{props.title}</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
