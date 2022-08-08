@@ -8,6 +8,12 @@ export default function TextForm(props) {
         setText(newText);   // This will allow the text in the textarea to change as the text variable is set as something else
     }
 
+    const handleLoClick = () => {
+        console.log("Lower case was clicked");
+        let newText = text.toLowerCase();
+        setText(newText);
+    }
+
     const handleOnChange = (event) => { // event is passed as a parameter by default for any event that takes place
         console.log("On change");
         setText(event.target.value);    // This allows the text to be written from user input in addition to the text that is there in the state variable 'text'
@@ -26,6 +32,7 @@ export default function TextForm(props) {
                 <textarea className="form-control" id="myBox" value={text} onChange={handleOnChange} rows="8"></textarea>
             </div>
             <button className="btn btn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
+            <button className="btn btn-primary" onClick={handleLoClick}>Convert to Lowercase</button>
         </div>
 
         <div className="container my-5">
