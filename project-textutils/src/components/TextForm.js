@@ -6,17 +6,21 @@ export default function TextForm(props) {
         console.log("Upper case was clicked");
         let newText = text.toUpperCase();
         setText(newText);   // This will allow the text in the textarea to change as the text variable is set as something else
+        props.showAlert("Converted to upper case", "success");
     }
 
     const handleLoClick = () => {
         console.log("Lower case was clicked");
         let newText = text.toLowerCase();
         setText(newText);
+        props.showAlert("Converted to lower case", "success");
     }
     
     const handleClearClick = () => {
         let newText = "";
         setText(newText);
+        props.showAlert("Text is cleared", "success");
+
     }
 
     const handleOnChange = (event) => { // event is passed as a parameter by default for any event that takes place
