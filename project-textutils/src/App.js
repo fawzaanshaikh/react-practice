@@ -22,9 +22,9 @@ function App() {
       {/* Added a navbar as a component which we made in Navbar.js, and we passed a prop named TextUtils to the component which is displayed on the screen */}
       <Navbar title="TextUtils" aboutText="About TextUtils" mode={mode} toggleMode={toggleMode} />
       <div className="container my-3">
-        <TextForm heading="Enter the text to analyze" />
+        <TextForm heading="Enter the text to analyze" mode={mode} />
       </div>
-      <About/>
+      <About />
     </>
   );
 }

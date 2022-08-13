@@ -31,17 +31,17 @@ export default function TextForm(props) {
 
   return (
     <>
-        <div className="container">
+        <div className="container" style={{color: props.mode === "light" ? "black" : "white"}}>
             <h1>{props.heading}</h1>
             <div className="mb-3">
-                <textarea className="form-control" id="myBox" value={text} onChange={handleOnChange} rows="8"></textarea>
+                <textarea className="form-control" id="myBox" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode === "light" ? "white" : "#c8c8c8", color: props.mode === "light" ? "black" : "white"}} rows="8"></textarea>
             </div>
             <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to Lowercase</button>
             <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear Text</button>
         </div>
 
-        <div className="container my-5">
+        <div className="container my-5" style={{color: props.mode === "light" ? "black" : "white"}}>
             <h2>Your text summary</h2>
             <p>Number of words = {text.split(" ").length} and characters = {text.length}</p>
         </div>
