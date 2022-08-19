@@ -14,5 +14,6 @@
 - Babel compiles JSX code into JS (React.createElement() calls)
 - Props is short for Properties
 - Favicon is the icon that represents your website on the tab of the browser, it can be changed by using another .ico file
-
+- React Router is responsible for reloading the content on the page making it a SPA
+- For react router to work, the a-href need to be converted to Link-href
 
