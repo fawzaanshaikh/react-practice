@@ -1,10 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
+import Practice from './components/Practice';
 
 let name = "Fawzaan"; // This is a variable which can then be used in the JSX code using {}
 
 function App() {
   // JSX is returned and all of it has to be enclosed within one tag (could be div or an empty <>...</> tag)
+  
+  const showText = (text) => {
+    console.log("Show this text: " + text);
+  }
+
   return (
     // Called as a JSX fragment for letting multiple elements be returned
     <> 
@@ -39,6 +45,8 @@ function App() {
     <div className="container">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti temporibus in perspiciatis sequi maiores, ratione fugiat, labore reprehenderit autem aspernatur nisi dolorem ipsa quidem laudantium sed sunt modi ab, ullam esse libero. Magni, corrupti.
     </div>
+
+    <Practice showText={showText}/>
     </>
   );
 }
