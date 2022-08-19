@@ -7,7 +7,7 @@ import Alert from './components/Alert';
 
 function App() {
   const [mode, setMode] = useState("light");  // Whether dark mode is enabled
-  const [alert, setAlert] = useState(null);
+  const [alert, setAlert] = useState(null);   // Alert for actions happening on the website
 
   const showAlert = (message, type) => {
     setAlert({
@@ -31,6 +31,17 @@ function App() {
       showAlert("Light mode has been enabled", "success");
     }
   }
+
+  // const changeColor = (color) => {
+  //   if (color === "blue") {
+  //     document.body.style.backgroundColor = "blue";
+  //     setDisabled("disabled");
+  //   } else {
+  //     document.body.style.backgroundColor = "green";
+  //     setDisabled("disabled");
+  //   }
+  // }
+
   return (
     <>
       {/* Added a navbar as a component which we made in Navbar.js, and we passed a prop named TextUtils to the component which is displayed on the screen */}
