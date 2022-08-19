@@ -4,7 +4,20 @@ import React from 'react'
 import PropTypes from 'prop-types' // type impt to get prop types import
 
 export default function Navbar(props) {
-  
+
+  const setGreenColor = () => {
+    if (props.mode === "dark")
+        document.body.style.backgroundColor = "green";
+  }
+  const setBlueColor = () => {
+    if (props.mode === "dark")
+        document.body.style.backgroundColor = "blue";
+  }
+  const setGreyColor = () => {
+    if (props.mode === "dark")
+        document.body.style.backgroundColor = "grey";
+  }
+
   return (
     <>
         <nav className={`navbar navbar-expand-lg bg-${props.mode} navbar-${props.mode}`}> {/* Earlier it was bg-light and navbar-light */}
@@ -26,6 +39,18 @@ export default function Navbar(props) {
                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                     <button className="btn btn-outline-success" type="submit">Search</button>
                 </form> */}
+                <div className="form-check form-check-inline">
+                    <input className="form-check-input" type="radio" onClick={setGreenColor} name="inlineRadioOptions" id="inlineRadio1" value="green"/>
+                    <label className={`form-check-label text-${props.mode === "light" ? "dark" : "light"}`} htmlFor="inlineRadio1">Green</label>
+                </div>
+                <div className="form-check form-check-inline">
+                    <input className="form-check-input" type="radio" onClick={setBlueColor} name="inlineRadioOptions" id="inlineRadio2" value="blue"/>
+                    <label className={`form-check-label text-${props.mode === "light" ? "dark" : "light"}`} htmlFor="inlineRadio2">Blue</label>
+                </div>
+                <div className="form-check form-check-inline">
+                    <input className="form-check-input" type="radio" onClick={setGreyColor} name="inlineRadioOptions" id="inlineRadio3" value="grey" />
+                    <label className={`form-check-label text-${props.mode === "light" ? "dark" : "light"}`} htmlFor="inlineRadio3">Dark</label>
+                </div>
 
                 <div className={`mx-5 form-check form-switch text-${props.mode === "light" ? "dark" : "light"}`}>
                     <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />

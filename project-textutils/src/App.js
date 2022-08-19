@@ -6,6 +6,7 @@ import React, {useState} from 'react';
 import Alert from './components/Alert';
 
 function App() {
+  
   const [mode, setMode] = useState("light");  // Whether dark mode is enabled
   const [alert, setAlert] = useState(null);   // Alert for actions happening on the website
 
@@ -31,16 +32,6 @@ function App() {
       showAlert("Light mode has been enabled", "success");
     }
   }
-
-  // const changeColor = (color) => {
-  //   if (color === "blue") {
-  //     document.body.style.backgroundColor = "blue";
-  //     setDisabled("disabled");
-  //   } else {
-  //     document.body.style.backgroundColor = "green";
-  //     setDisabled("disabled");
-  //   }
-  // }
 
   return (
     <>
