@@ -48,6 +48,8 @@ export default function TextForm(props) {
         <div className="container my-5" style={{color: props.mode === "light" ? "black" : "white"}}>
             <h2>Your text summary</h2>
             <p>Number of words = {(text.split(" ")[text.split(" ").length - 1] !== "") ? text.split(" ").length : text.split(" ").length - 1} and characters = {text.length}</p>
+            {/* Another way of handling the extra word count is by text.split(" ").filter((element) => {return element.length !== 0}).length  
+                filter function checks whether an element should be put within the array based on the definition of the function */}
         </div>
     </>
   )
