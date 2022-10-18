@@ -2,23 +2,31 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const shortenWidth = {
+    width: "wrap-content"
+  };
+
+  const greyBackground = {
+    color: "grey"
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container text-center">
+        <div className="container-within row text-center my-5 white-bg">
+          <div className="col text-center my-5">Module 1</div>
+        </div>
+        <div className="container-within row text-center my-5 white-bg">
+          <div className="col text-center my-5">Module 2</div>
+        </div>
+        <div className="container-within row text-center my-5 white-bg">
+          <div className="col text-center my-5">Module 3</div>
+        </div>
+        <div className="container-within row text-center my-5 white-bg">
+          <div className="col text-center my-5">Module 4</div>
+        </div>
+      </div>
+    </>
   );
 }
 
