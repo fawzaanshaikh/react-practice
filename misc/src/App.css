@@ -43,8 +43,61 @@ body {
 
 .white-bg {
   background-color: white;
-  width: 50%;
-  margin: auto;
   border: solid black 2px;
   border-radius: 10px;
+}
+
+.container-within {
+  width: 90%;
+  margin: auto;
+}
+
+#module-banner {
+  height: 120px;
+  width: 50%;
+}
+
+#banner-text {
+  position: relative;
+  top: 45px;
+}
+
+#badge {
+  position: relative;
+  left: 200px;
+  height: 120px;
+  width: 10px;
+  border: solid black 2px;
+  border-radius: 100%;
+  margin: auto 150px;
+}
+
+#badge-text {
+  position: relative;
+  top: 45px;
+}
+
+.line {
+  color: white;
+  font-weight: 800;
+}
+
+.videos {
+  height: 300px;
+}
+
+.video-text {
+  position: relative;
+  top: 125px;
+}
+
+.schedule {
+  margin: auto;
+  width: 80%;
+  background-color: white;
+  color: orange;
+  border: solid orange 5px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 25px;
 }
