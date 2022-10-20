@@ -21,9 +21,17 @@ function App() {
           <div className="col text-center my-5">Schedule your class</div>
         </div>
 
-        <div className="container-within row text-center my-5">
-          <div className="col text-center mx-5 white-bg"><span className="option-text">Resources</span></div>
-          <div className="col text-center mx-5 white-bg"><span className="option-text">Quizzes</span></div>
+        <div className="container-within row text-center my-3">
+          <div className="col text-center mx-5 white-bg option"><span className="option-text">Resources</span></div>
+          <div className="col text-center mx-5 white-bg option"><span className="option-text">Quizzes</span></div>
+        </div>
+        <div className="container-within row text-center my-3">
+          <div className="col text-center mx-5 white-bg option"><span className="option-text">Peer-review asn</span></div>
+          <div className="col text-center mx-5 white-bg option"><span className="option-text">Sim Arena 1</span></div>
+        </div>
+
+        <div className="row text-center my-5 finish-row">
+          <button type="submit" className="btn btn-primary finish">Finish</button>
         </div>
       </div>
     </>
